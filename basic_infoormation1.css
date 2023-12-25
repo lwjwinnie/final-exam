@@ -1,0 +1,144 @@
+footer {
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    /*margin-top: -30px;
+    height: 30px;*/
+
+}
+
+body,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    font-family: Dancing Script;
+    font-size: 50px;
+    text-align: center;
+    color: #cb9b8f;
+    word-spacing: 80px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.heads {
+    display: inline;
+    font-size: 20px;
+
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: min-content;
+    flex-direction: row;
+}
+
+.text123 {
+    text-decoration: none;
+    color: #cb9b8f;
+
+}
+
+.menu {
+    color: #cb9b8f;
+    text-decoration: none;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+
+    text-align: center;
+}
+
+#personalInfo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+p {
+    margin: 10px 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
