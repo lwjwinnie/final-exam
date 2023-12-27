@@ -44,9 +44,10 @@
                 <span class="iconify-inline" data-icon="carbon:book"
                     style="color:#cb9b8f;width:50px;height: 27px;"></span>
             </a>
-            <!--<a href="">
-                <span class="iconify-inline" data-icon="ion:menu" style="color:#cb9b8f;width:50px;height: 27px;"></span>
-            </a>-->
+            <a href="">
+                <span class="iconify-inline" data-icon="material-symbols:search"
+                    style="color:#cb9b8f;width:50px;height: 27px;"></span>
+            </a>
         </nav>
     </header>
 
@@ -85,8 +86,8 @@
             <tbody></tbody>
             <!-- Product 1 -->
             <tr>
-                <td>項鍊Necklace</td>
-                <td>$50.00</td>
+                <td>白晝之月</td>
+                <td>$450.00</td>
                 <td>2</td>
 
             </tr>
@@ -94,9 +95,9 @@
 
             <tr>
 
-                <td>手鍊Bracelet</td>
+                <td>摘星攬月</td>
 
-                <td>$30.00</td>
+                <td>$350.00</td>
 
                 <td>1</td>
 
@@ -114,30 +115,92 @@
     <!-- Add a new section for Review History -->
     <section id="reviewHistory">
         <h2>歷史評論</h2>
-        <!-- Add content for review history here -->
+        <table>
+
+            <tr>
+                <th>日期</th>
+                <th>評價</th>
+
+            </tr>
+            </thead>
+            <tbody></tbody>
+            <!-- 1 -->
+            <tr>
+                <td>2023/05/25</td>
+                <td>商品質量佳</td>
+
+            </tr>
+            <!-- 2 -->
+
+            <tr>
+
+                <td>2023/11/08</td>
+
+                <td>項鍊款式好看</td>
+
+
+            </tr>
+
+
+
+
+            </tbody>
+
+            </t>
+        </table>
+
     </section>
 
-    <!-- Add a new section for Rating History -->
+
     <section id="ratingHistory">
         <h2>評分紀錄</h2>
-        <!-- Add content for rating history here -->
+        <table>
+            <tr>
+                <th>商品</th>
+                <th>評分</th>
+
+            </tr>
+            </thead>
+            <tbody></tbody>
+            <!-- 1 -->
+            <tr>
+                <td>白晝之月</td>
+                <td><span class="iconify-inline" data-icon="material-symbols:star"
+                        style="color:yellow;width:30px;height: 27px;"></span><span class="iconify-inline"
+                        data-icon="material-symbols:star" style="color:yellow;width:30px;height: 27px;"></span><span
+                        class="iconify-inline" data-icon="material-symbols:star"
+                        style="color:yellow;width:30px;height: 27px;"></span><span class="iconify-inline"
+                        data-icon="material-symbols:star" style="color:yellow;width:30px;height: 27px;"></span><span
+                        class="iconify-inline" data-icon="material-symbols:star"
+                        style="color:yellow;width:30px;height: 27px;"></span></td>
+
+            </tr>
+            <!-- 2 -->
+
+            <tr>
+
+                <td>摘星攬月</td>
+
+                <td><span class="iconify-inline" data-icon="material-symbols:star"
+                        style="color:yellow;width:30px;height: 27px;"></span><span class="iconify-inline"
+                        data-icon="material-symbols:star" style="color:yellow;width:30px;height: 27px;"></span><span
+                        class="iconify-inline" data-icon="material-symbols:star"
+                        style="color:yellow;width:30px;height: 27px;"></span><span class="iconify-inline"
+                        data-icon="material-symbols:star" style="color:yellow;width:30px;height: 27px;"></span><span
+                        class="iconify-inline" data-icon="material-symbols:star"
+                        style="color:yellow;width:30px;height: 27px;"></span></td>
+
+
+            </tr>
+
+
+
+
+            </tbody>
+
+            </t>
+        </table>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <footer
         style=" display:flex;flex-direction:column; gap:10px;height:400px;max-height:500px;min-height: fit-content;">
@@ -154,6 +217,10 @@
                     style="color:#cb9b8f;width:70px;height: 70px;"></span></a>
 
             <p><b>Copyright @ 2024 Libertà</b></p>
+            <p><label for="numberInput">瀏覽次數</label>
+                <input type="text" id="numberInput" name="numberInput" oninput="validateInput(this)" pattern="\d*"
+                    title="請輸入數字" maxlength="3">
+            </p>
         </div>
 
 

@@ -61,3 +61,13 @@ function updateInfo() {
   document.getElementById('newAge').value = '';
   document.getElementById('newAddress').value = '';
 }
+
+
+  function addToCart(productName, price) {
+      // 執行加入購物車的相關邏輯，這裡只是一個簡單的提示框示例
+      showAddedToCartMessage(productName, price);
+  }
+
+  function showAddedToCartMessage(productName, price) {
+      alert(`已將商品 "${productName}" 加入購物車，價格：NT$${price}`);
+  }

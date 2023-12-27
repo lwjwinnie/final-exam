@@ -55,3 +55,19 @@ footer {
     color: #cb9b8f;
 
 }
+
+img {
+    width: 80px;
+    height: 80px;
+
+    margin-right: 10px;
+}
+
+.shopping_item {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+
+    align-items: center;
+}
