@@ -35,7 +35,7 @@
                 <span class="iconify-inline" data-icon="bi:cart-fill"
                     style="color:#cb9b8f;width:50px;height: 27px;"></span>
             </a>
-            <a href="personal_information.html">
+            <a href="loginform.html">
                 <span class="iconify-inline" data-icon="mdi:user" style="color:#cb9b8f;width:50px;height: 27px;"></span>
             </a>
             <a href="basic_information.html">
@@ -90,7 +90,26 @@
             </div>
         </div>
     </div>
+    <form class="pay">
+        <label for="creditCard">
+            <input type="radio" id="creditCard" name="paymentMethod" value="creditCard">
+            信用卡支付
+        </label>
 
+        <label for="linepay">
+            <input type="radio" id="linepay" name="paymentMethod" value="linepay">
+            LINEPay
+        </label>
+
+        <label for="cash">
+            <input type="radio" id="cash" name="paymentMethod" value="cash">
+            現金支付
+        </label>
+
+        <div class="item_txt_button">
+            <input type="button" value="確認結帳" name="" id="addToCartBtn1" onclick="addToCart('您的訂單已完成!')">
+        </div>
+    </form>
 
 
 

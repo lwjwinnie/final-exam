@@ -71,3 +71,7 @@ function updateInfo() {
   function showAddedToCartMessage(productName, price) {
       alert(`已將商品 "${productName}" 加入購物車，價格：NT$${price}`);
   }
+  document.getElementById('searchIcon').addEventListener('click', function () {
+    var searchBox = document.getElementById('searchBox');
+    searchBox.style.display = (searchBox.style.display === 'none' || searchBox.style.display === '') ? 'block' : 'none';
+});

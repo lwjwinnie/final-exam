@@ -19,10 +19,10 @@ function deleteItem(element) {
 }
 
 
-/*function deleteItem(button) {
-    // 找到包含被點擊按鈕的 shopping_item
-    var shoppingItem = button.closest('.shopping_item');
+function addToCart(message) {
+    // 执行添加到购物车的逻辑
+    // ...
 
-    // 從 DOM 中刪除該 shopping_item
-    if (shoppingItem) {
-        shoppingItem.remove();*/
+    // 弹出提示窗口
+    alert(message);
+}

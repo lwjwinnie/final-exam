@@ -37,11 +37,37 @@ footer {
 
 }
 
+#login-signup {
+    height: 400px;
+    margin: 50px 0;
+}
+
 .nav {
     display: flex;
     justify-content: space-evenly;
     width: min-content;
     flex-direction: row;
+}
+
+#login-signup {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.loginForm,
+.registerForm {
+    background-color: #cb9b8f;
+
+    width: 400px;
+    height: 300px;
+    color: white;
+    padding: 40px;
+    line-height: 50px;
+    border-radius: 15px;
+    text-align: center;
+
+    top: 20%;
+    left: 20%;
 }
 
 .menu {
@@ -54,32 +80,4 @@ footer {
     text-decoration: none;
     color: #cb9b8f;
 
-}
-
-img {
-    width: 80px;
-    height: 80px;
-
-    margin-right: 10px;
-}
-
-.shopping_item {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-
-
-    align-items: center;
-    padding: 25px;
-}
-
-.pay {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-
-
-    align-items: center;
-    padding: 60px;
-    margin-bottom: 30px;
 }
