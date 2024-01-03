@@ -1,0 +1,85 @@
+body,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    /*margin-top: -30px;
+    height: 30px;*/
+
+}
+
+.header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    font-family: Dancing Script;
+    font-size: 50px;
+    text-align: center;
+    color: #cb9b8f;
+    word-spacing: 80px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.heads {
+    display: inline;
+    font-size: 20px;
+
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: min-content;
+    flex-direction: row;
+}
+
+.menu {
+    color: #cb9b8f;
+    text-decoration: none;
+
+}
+
+.text123 {
+    text-decoration: none;
+    color: #cb9b8f;
+
+}
+
+img {
+    width: 80px;
+    height: 80px;
+
+    margin-right: 10px;
+}
+
+.shopping_item {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+
+    align-items: center;
+    padding: 25px;
+}
+
+.pay {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+
+    align-items: center;
+    padding: 60px;
+    margin-bottom: 30px;
+}
