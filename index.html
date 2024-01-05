@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=d, initial-scale=1.0">
     <title>Libertà</title>
-    <script src="index.js" defer></script>
-    <link rel="stylesheet" href="index.css">
+    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Lobster&display=swap"
@@ -34,7 +34,7 @@
                 <span class="iconify-inline" data-icon="bi:cart-fill"
                     style="color:#cb9b8f;width:50px;height: 27px;"></span>
             </a>
-            <a href="personal_information.html">
+            <a href="loginform.html">
                 <span class="iconify-inline" data-icon="mdi:user" style="color:#cb9b8f;width:50px;height: 27px;"></span>
             </a>
             <a href="basic_information.html">
@@ -44,6 +44,9 @@
                 <span class="iconify-inline" data-icon="material-symbols:search"
                     style="color:#cb9b8f;width:50px;height: 27px;"></span>
             </a>
+            <div id="searchBox" style="display: none;">
+                <input type="text" id="search" name="q" placeholder="輸入搜尋內容...">
+            </div>
         </nav>
     </header>
     <div id="carousel-container">
@@ -63,8 +66,8 @@
             <div class="array">
                 <div class="item">
                     <div class="item_img">
-                        <img class="img1" src="images/accessory/necklace1.png" alt="項鍊1">
-                        <img class="img2" src="images/accessory/necklace1..png" alt="項鍊1">
+                        <a href="product_page.html"><img class="img1" src="images/accessory/necklace1.png" alt="項鍊1">
+                            <img class="img2" src="images/accessory/necklace1..png" alt="項鍊1"></a>
                     </div>
                     <div class="item_txt">
                         <h3 class="item_txt_title">星海與月</h3>
