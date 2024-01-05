@@ -26,10 +26,10 @@ let currentIndex = 0;
   }
 
 
-  // Get the button:
+ 
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -40,23 +40,23 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
 }
 function updateInfo() {
-  // 獲取新的資料
+  
   var newName = document.getElementById('newName').value;
   var newAge = document.getElementById('newAge').value;
   var newAddress = document.getElementById('newAddress').value;
 
-  // 更新顯示在網頁上的資料
+  
   document.getElementById('name').textContent = newName;
   document.getElementById('age').textContent = newAge;
   document.getElementById('address').textContent = newAddress;
 
-  // 清空輸入框
+ 
   document.getElementById('newName').value = '';
   document.getElementById('newAge').value = '';
   document.getElementById('newAddress').value = '';
@@ -64,7 +64,7 @@ function updateInfo() {
 
 
   function addToCart(productName, price) {
-      // 執行加入購物車的相關邏輯，這裡只是一個簡單的提示框示例
+      
       showAddedToCartMessage(productName, price);
   }
 

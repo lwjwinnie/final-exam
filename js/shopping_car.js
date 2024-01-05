@@ -20,9 +20,6 @@ function deleteItem(element) {
 
 
 function addToCart(message) {
-    // 执行添加到购物车的逻辑
-    // ...
-
-    // 弹出提示窗口
+   
     alert(message);
 }

@@ -1,3 +1,6 @@
+<!--<%@ page import="java.sql.*" %>
+    <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+        <%@ include file="config.jsp" %>-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,19 +44,20 @@
         </nav>
     </header>
     <div id="login-signup">
-        <form class="registerForm">
+
+
+        <form method="post" action="reg.jsp" class="registerForm">
             <h2>會員註冊</h2>
+            <input type="password" placeholder="帳號" name="id">
+            <input type="text" placeholder="用戶名" name="name"><br>
+            <input type="password" placeholder="年齡" name="age">
+            <input type="password" placeholder="生日" name="birthday"><br>
+            <input type="phone" placeholder="TW +886" name="number">
+            <input type="password" placeholder="聯絡信箱" name="address"><br>
+            <input type="password" placeholder="設定密碼" name="pwd">
+            <input type="password" placeholder="確認密碼" name="checkpwd"><br>
 
-            <input type="text" placeholder="用戶名">
-            <input type="password" placeholder="性別"><br>
-            <input type="password" placeholder="年齡">
-            <input type="password" placeholder="生日"><br>
-            <input type="phone" placeholder="TW +886">
-            <input type="password" placeholder="聯絡信箱"><br>
-            <input type="password" placeholder="設定密碼">
-            <input type="password" placeholder="確認密碼"><br>
-
-            <input type="submit" value="立即加入">
+            <button type="submit">Submit</button>
         </form>
     </div>
 

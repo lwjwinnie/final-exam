@@ -1,6 +1,5 @@
-<!--<%@ page import="java.sql.*" %>
-    <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-        <%@ include file="config.jsp" %>-->
+<%@ page import = "java.sql.*"%>
+<%@ page language="java" contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,23 +8,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libertà</title>
-    <script src="js/loginform.js" defer></script>
-    <link rel="stylesheet" href="css/loginform.css">
+    <script src="js/shopping_car.js" defer></script>
+    <link rel="stylesheet" href="css/shopping_car.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Lobster&display=swap"
         rel="stylesheet">
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
-
 </head>
 
 <body>
     <header class="header">
-
         <a class="text123" href="index.html">
             <h1>Libertà</h1>
         </a>
+        <nav class="heads">
 
+            <ul>
+                <a class="menu" href="necklace.html">項鍊Necklace</a>
+                <a class="menu" href="bracelet.html">手鍊Bracelet</a>
+                <a class="menu" href="ring.html">戒指Ring</a>
+                <a class="menu" href="earring.html">耳環Earrings</a>
+            </ul>
+
+        </nav>
         <nav class="nav">
             <a href="shopping_car.html">
                 <span class="iconify-inline" data-icon="bi:cart-fill"
@@ -43,30 +49,29 @@
             </a>
         </nav>
     </header>
+    <%@ include file="showcart.jsp"%>
+    <form class="pay">
+        <label for="creditCard">
+            <input type="radio" id="creditCard" name="paymentMethod" value="creditCard">
+            信用卡支付
+        </label>
 
-    <div id="login-signup">
+        <label for="linepay">
+            <input type="radio" id="linepay" name="paymentMethod" value="linepay">
+            LINEPay
+        </label>
 
-        <form class="loginForm" action="check.jsp" method="POST">
-            <h2>會員登入</h2>
-            <input type="text" placeholder="電子郵件或手機號碼" name="id"><br>
-            <input type="password" placeholder="密碼" name="pwd"><br>
-            <input type="submit" value="開始購物吧">
-            <a href="registerForm.html">
-                <p>加入會員</p>
-            </a>
-        </form>
+        <label for="cash">
+            <input type="radio" id="cash" name="paymentMethod" value="cash">
+            現金支付
+        </label>
+
+        <div class="item_txt_button">
+            <input type="button" value="確認結帳" name="" id="addToCartBtn1" onclick="addToCart('您的訂單已完成!')">
+        </div>
+    </form>
 
 
-        <!--<form class="registerForm">
-            <h2>會員註冊</h2>
-
-            <input type="text" placeholder="用戶名"><br>
-            <input type="phone" placeholder="TW +886"><br>
-            <input type="password" placeholder="密碼"><br>
-
-            <input type="submit" value="立即加入">
-        </form>-->
-    </div>
 
 
 
@@ -92,6 +97,7 @@
 
 
     </footer>
+
 </body>
 
 </html>
