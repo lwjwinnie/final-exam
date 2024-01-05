@@ -1,6 +1,3 @@
-<!--<%@ page import="java.sql.*" %>
-    <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-        <%@ include file="config.jsp" %>-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,13 +40,12 @@
             </a>
         </nav>
     </header>
-
     <div id="login-signup">
-
-        <form class="loginForm" action="check.jsp" method="POST">
+        <form class="loginForm">
             <h2>會員登入</h2>
-            <input type="text" placeholder="電子郵件或手機號碼" name="id"><br>
-            <input type="password" placeholder="密碼" name="pwd"><br>
+
+            <input type="text" placeholder="電子郵件或手機號碼"><br>
+            <input type="password" placeholder="密碼"><br>
             <input type="submit" value="開始購物吧">
             <a href="registerForm.html">
                 <p>加入會員</p>

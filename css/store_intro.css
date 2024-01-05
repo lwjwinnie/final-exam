@@ -88,13 +88,9 @@ img {
 }
 
 .item_txt {
-    text-align: left;
-    font-size: 15px;
+    text-align: center;
+    font-size: 10px;
     width: 80%;
-}
-
-.item_txt {
-    padding: 10px;
 }
 
 .item:hover .img2 {
