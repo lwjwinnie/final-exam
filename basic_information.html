@@ -50,158 +50,158 @@
             </a>-->
         </nav>
     </header>
+    <div class="people">
+        <h1>個人資訊</h1>
 
-    <h1>個人資訊</h1>
+        <div id="personalInfo">
+            <p><strong>姓名：</strong> <span id="name">John Doe</span></p>
+            <p><strong>年齡：</strong> <span id="age">25</span></p>
+            <p><strong>地址：</strong> <span id="address">123 Main St, City</span></p>
+        </div>
 
-    <div id="personalInfo">
-        <p><strong>姓名：</strong> <span id="name">John Doe</span></p>
-        <p><strong>年齡：</strong> <span id="age">25</span></p>
-        <p><strong>地址：</strong> <span id="address">123 Main St, City</span></p>
+        <form id="editForm">
+            <label for="newName">新姓名：</label>
+            <input type="text" id="newName" required>
+            <br>
+            <label for="newAge">新年齡：</label>
+            <input type="number" id="newAge" required min="0">
+            <br>
+            <label for="newAddress">新地址：</label>
+            <input type="text" id="newAddress" required>
+            <br>
+            <button type="button" onclick="updateInfo()">修改資料</button>
+        </form>
+
+
+        <section id="purchaseHistory">
+            <h2>消費紀錄</h2>
+            <table>
+
+                <tr>
+                    <th>商品</th>
+                    <th>單價</th>
+                    <th>商品數量</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+                <!-- Product 1 -->
+                <tr>
+                    <td>白晝之月</td>
+                    <td>$450.00</td>
+                    <td>2</td>
+
+                </tr>
+                <!-- Product 2 -->
+
+                <tr>
+
+                    <td>摘星攬月</td>
+
+                    <td>$350.00</td>
+
+                    <td>1</td>
+
+                </tr>
+
+                <!-- Add more rows for other products as needed -->
+
+
+                </tbody>
+
+                </t>
+            </table>
+        </section>
+
+        <!-- Add a new section for Review History -->
+        <section id="reviewHistory">
+            <h2>歷史評論</h2>
+            <table>
+
+                <tr>
+                    <th>日期</th>
+                    <th>評價</th>
+
+                </tr>
+                </thead>
+                <tbody></tbody>
+                <!-- 1 -->
+                <tr>
+                    <td>2023/05/25</td>
+                    <td>商品質量佳</td>
+
+                </tr>
+                <!-- 2 -->
+
+                <tr>
+
+                    <td>2023/11/08</td>
+
+                    <td>項鍊款式好看</td>
+
+
+                </tr>
+
+
+
+
+                </tbody>
+
+                </t>
+            </table>
+
+        </section>
+
+
+        <section id="ratingHistory">
+            <h2>評分紀錄</h2>
+            <table>
+                <tr>
+                    <th>商品</th>
+                    <th>評分</th>
+
+                </tr>
+                </thead>
+                <tbody></tbody>
+                <!-- 1 -->
+                <tr>
+                    <td>白晝之月</td>
+                    <td><span class="iconify-inline" data-icon="material-symbols:star"
+                            style="color:yellow;width:30px;height: 27px;"></span><span class="iconify-inline"
+                            data-icon="material-symbols:star" style="color:yellow;width:30px;height: 27px;"></span><span
+                            class="iconify-inline" data-icon="material-symbols:star"
+                            style="color:yellow;width:30px;height: 27px;"></span><span class="iconify-inline"
+                            data-icon="material-symbols:star" style="color:yellow;width:30px;height: 27px;"></span><span
+                            class="iconify-inline" data-icon="material-symbols:star"
+                            style="color:yellow;width:30px;height: 27px;"></span></td>
+
+                </tr>
+                <!-- 2 -->
+
+                <tr>
+
+                    <td>摘星攬月</td>
+
+                    <td><span class="iconify-inline" data-icon="material-symbols:star"
+                            style="color:yellow;width:30px;height: 27px;"></span><span class="iconify-inline"
+                            data-icon="material-symbols:star" style="color:yellow;width:30px;height: 27px;"></span><span
+                            class="iconify-inline" data-icon="material-symbols:star"
+                            style="color:yellow;width:30px;height: 27px;"></span><span class="iconify-inline"
+                            data-icon="material-symbols:star" style="color:yellow;width:30px;height: 27px;"></span><span
+                            class="iconify-inline" data-icon="material-symbols:star"
+                            style="color:yellow;width:30px;height: 27px;"></span></td>
+
+
+                </tr>
+
+
+
+
+                </tbody>
+
+                </t>
+            </table>
+        </section>
     </div>
-
-    <form id="editForm">
-        <label for="newName">新姓名：</label>
-        <input type="text" id="newName" required>
-        <br>
-        <label for="newAge">新年齡：</label>
-        <input type="number" id="newAge" required min="0">
-        <br>
-        <label for="newAddress">新地址：</label>
-        <input type="text" id="newAddress" required>
-        <br>
-        <button type="button" onclick="updateInfo()">修改資料</button>
-    </form>
-
-
-    <section id="purchaseHistory">
-        <h2>消費紀錄</h2>
-        <table>
-
-            <tr>
-                <th>商品</th>
-                <th>單價</th>
-                <th>商品數量</th>
-            </tr>
-            </thead>
-            <tbody></tbody>
-            <!-- Product 1 -->
-            <tr>
-                <td>白晝之月</td>
-                <td>$450.00</td>
-                <td>2</td>
-
-            </tr>
-            <!-- Product 2 -->
-
-            <tr>
-
-                <td>摘星攬月</td>
-
-                <td>$350.00</td>
-
-                <td>1</td>
-
-            </tr>
-
-            <!-- Add more rows for other products as needed -->
-
-
-            </tbody>
-
-            </t>
-        </table>
-    </section>
-
-    <!-- Add a new section for Review History -->
-    <section id="reviewHistory">
-        <h2>歷史評論</h2>
-        <table>
-
-            <tr>
-                <th>日期</th>
-                <th>評價</th>
-
-            </tr>
-            </thead>
-            <tbody></tbody>
-            <!-- 1 -->
-            <tr>
-                <td>2023/05/25</td>
-                <td>商品質量佳</td>
-
-            </tr>
-            <!-- 2 -->
-
-            <tr>
-
-                <td>2023/11/08</td>
-
-                <td>項鍊款式好看</td>
-
-
-            </tr>
-
-
-
-
-            </tbody>
-
-            </t>
-        </table>
-
-    </section>
-
-
-    <section id="ratingHistory">
-        <h2>評分紀錄</h2>
-        <table>
-            <tr>
-                <th>商品</th>
-                <th>評分</th>
-
-            </tr>
-            </thead>
-            <tbody></tbody>
-            <!-- 1 -->
-            <tr>
-                <td>白晝之月</td>
-                <td><span class="iconify-inline" data-icon="material-symbols:star"
-                        style="color:yellow;width:30px;height: 27px;"></span><span class="iconify-inline"
-                        data-icon="material-symbols:star" style="color:yellow;width:30px;height: 27px;"></span><span
-                        class="iconify-inline" data-icon="material-symbols:star"
-                        style="color:yellow;width:30px;height: 27px;"></span><span class="iconify-inline"
-                        data-icon="material-symbols:star" style="color:yellow;width:30px;height: 27px;"></span><span
-                        class="iconify-inline" data-icon="material-symbols:star"
-                        style="color:yellow;width:30px;height: 27px;"></span></td>
-
-            </tr>
-            <!-- 2 -->
-
-            <tr>
-
-                <td>摘星攬月</td>
-
-                <td><span class="iconify-inline" data-icon="material-symbols:star"
-                        style="color:yellow;width:30px;height: 27px;"></span><span class="iconify-inline"
-                        data-icon="material-symbols:star" style="color:yellow;width:30px;height: 27px;"></span><span
-                        class="iconify-inline" data-icon="material-symbols:star"
-                        style="color:yellow;width:30px;height: 27px;"></span><span class="iconify-inline"
-                        data-icon="material-symbols:star" style="color:yellow;width:30px;height: 27px;"></span><span
-                        class="iconify-inline" data-icon="material-symbols:star"
-                        style="color:yellow;width:30px;height: 27px;"></span></td>
-
-
-            </tr>
-
-
-
-
-            </tbody>
-
-            </t>
-        </table>
-    </section>
-
     <footer
         style=" display:flex;flex-direction:column; gap:10px;height:400px;max-height:500px;min-height: fit-content;">
         <div class="bottom">
